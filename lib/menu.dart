@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sesion6/sesion7/screens/scrolltrabajo7_1.dart';
 import 'package:sesion6/widgetButon.dart';
 import 'package:sesion6/sesion6/screen/sesion6home.dart';
+import 'package:sesion6/sesion7/screens/scroll7w.dart';
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
@@ -28,7 +30,29 @@ class Menu extends StatelessWidget {
                   ),
                 );
               },
-            )
+            ),
+            WidgetButon(
+              text: 'Sesion 7',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ScrollScreen7(),
+                  ),
+                );
+              },
+            ),
+            WidgetButon(
+              text: 'Sesion 7.1 ',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ScrollScreen7_1sesion(),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
