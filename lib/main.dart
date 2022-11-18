@@ -14,10 +14,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
+      theme: ThemeData.dark(
         useMaterial3: true,
-        primarySwatch: Colors.blue,
-      ),
+      ).copyWith(
+          splashColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          highlightColor: Colors.black,
+          scaffoldBackgroundColor: Colors.black),
+
+      // theme: ThemeData(
+      //    useMaterial3: true,
+      //    primarySwatch: Colors.blue,
+      //  ),
       home: const Menu(),
     );
   }
